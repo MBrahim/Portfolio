@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import Review from "./Reviews";
 
 function Home2() {
   return (
@@ -13,38 +14,20 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
+              I’m Hardware Engineer who loves transforming ideas into
               reliable, scalable products. Over time, I’ve explored several
               technologies and found my passion in building high-performance
               systems and intuitive user experiences.
               <br />
               <br />
-              I’m proficient in
+              I’m a 
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Top-rated{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
-              <br />
-              <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              Freelancer on Upwork with a strong track record of delivering quality work to clients worldwide.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -53,8 +36,25 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+        <Row className="justify-content-center mt-5">
+          <Col md={8} className="text-center">
+            <div className="reviews-center">
+              <div className='title mb-4'>
+                <h2 className="purple" style={{ fontSize: "2.2em" }}>Upwork Reviews</h2>
+                <div className="underline" style={{ 
+                  width: '80px', 
+                  height: '4px', 
+                  background: 'rgba(138, 76, 168, 1)', 
+                  margin: '0.5rem auto' 
+                }}></div>
+              </div>
+              <Review />
+            </div>
+          </Col>
+        </Row>
       </Container>
     </Container>
+    
   );
 }
 export default Home2;

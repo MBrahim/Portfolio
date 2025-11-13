@@ -12,6 +12,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 
 function Home() {
   return (
@@ -87,6 +88,16 @@ function Home() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.upwork.com/freelancers/~01fee375b9991d43f0"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiUpwork />
                 </a>
               </li>
             </ul>
