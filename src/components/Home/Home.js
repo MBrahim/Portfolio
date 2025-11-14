@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/Home.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -13,6 +13,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
+import { float } from "three/tsl";
 
 function Home() {
   return (
@@ -39,12 +40,14 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 1 }}>
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxHeight: "600px",
+                float: "left",
+                verticalAlign: "top"}}
               />
             </Col>
           </Row>

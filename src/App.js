@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import ICM20948 from "./components/Projects/ICM20948";
+import SHM from "./components/Projects/16-Channel-Smart-Home-Control-Module";
 import {
   BrowserRouter as Router,
   Route,
@@ -41,6 +42,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Resume" element={<Resume />} />
           <Route path="/Project/ICM20948" element={<ICM20948 />} />
+          <Route path="/project/16-Channel-Smart-Home-Control-Module" element={<SHM />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

@@ -13,26 +13,26 @@ function ProjectCards({ imgPath, title, description, ghLink, isBlog, demoLink, w
         <Card.Text style={{ textAlign: "justify" }}>
           {description}
         </Card.Text>
-        <Button variant="primary" href={ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
         {!isBlog && demoLink && (
+        <Button variant="primary" href={demoLink} target="_blank">
+          <CgWebsite /> &nbsp;
+          {"Demo"}
+        </Button>
+        )}
+        {"\n"}
+        {"\n"}
+
+        {!isBlog && ghLink && (
           <Button
             variant="primary"
-            href={demoLink}
+            href={ghLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+          <BsGithub /> &nbsp;
+          {"GitHub"}
           </Button>
-        )}
+      )}
       </Card.Body>
     </Card>
   );
