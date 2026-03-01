@@ -1,19 +1,24 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(10, 20, 50, 0.95),
+    rgba(0, 120, 200, 0.85)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(10, 20, 50, 0.9),
+    rgba(0, 80, 150, 0.8)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #00f0ff; /* Bright cyan for electronics theme */
 }
 
+.cyan {
+  color: var(--imp-text-color) !important;
+}
+
+/* For any purple text that needs to be updated */
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -32,7 +37,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: rgb(10, 20, 50);
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -41,11 +46,6 @@ button:focus {
 #preloader-none {
   opacity: 0;
 }
-
-/* #preloader-none {
-  opacity: 0;
-  display: none;
-} */
 
 #no-scroll {
   overflow: hidden;
@@ -62,18 +62,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: rgb(0, 120, 200);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(10, 20, 50, 0.95);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgb(0, 200, 255);
   border-radius: 12px;
 }
 
@@ -81,9 +81,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: rgb(10, 20, 50) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 20px 0px rgba(0, 120, 200, 0.2) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -102,7 +102,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #00f0ff !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -149,7 +149,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: rgb(10, 20, 50) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -199,7 +199,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #00f0ff;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -214,10 +214,10 @@ button:focus {
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
@@ -227,7 +227,7 @@ button:focus {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -242,7 +242,7 @@ button:focus {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }
@@ -262,7 +262,6 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -271,7 +270,7 @@ button:focus {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: white;
   text-align: left;
 }
 
@@ -286,17 +285,19 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #00f0ff !important;
   font-weight: 600 !important;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #00f0ff !important;
 }
 
 @media (max-width: 767px) {
@@ -376,7 +377,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #0078c8;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -384,13 +385,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #00f0ff;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #00f0ff;
+  box-shadow: 0 0 5px #00f0ff;
+  text-shadow: 0 0 2px #00f0ff;
 }
 
 .social-icons {
@@ -400,17 +401,18 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: rgb(0, 120, 200) !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(10, 20, 50);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
+  border-top: 1px solid rgba(0, 120, 200, 0.3);
 }
 .footer-copywright {
   text-align: center !important;
@@ -444,7 +446,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #00a6ff !important;
 }
 /* --------- */
 /* Projects */
@@ -465,17 +467,20 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(0, 120, 200, 0.3) !important;
   color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
+  background: rgba(10, 20, 50, 0.4) !important;
+  backdrop-filter: blur(5px) !important;
+  opacity: 0.95 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  border: 1px solid rgba(0, 200, 255, 0.2) !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 15px 5px rgba(0, 160, 255, 0.4) !important;
+  border: 1px solid rgba(0, 200, 255, 0.4) !important;
 }
 
 .blog-card {
@@ -487,11 +492,13 @@ button:focus {
 }
 
 .blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  background: rgba(10, 20, 50, 0.4) !important;
+  backdrop-filter: blur(5px) !important;
+  box-shadow: 0 3px 3px 2px rgba(0, 120, 200, 0.3) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  border: 1px solid rgba(0, 200, 255, 0.2) !important;
 }
 
 .blog-link {
@@ -506,31 +513,33 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(0, 140, 255, 0.4) !important;
 }
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 0.9 !important;
   border-radius: 10px !important;
 }
 
 .blog-img {
   padding: 0px !important;
-  opacity: 0.8 !important;
+  opacity: 0.9 !important;
   border-radius: 0px !important;
 }
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background: linear-gradient(135deg, rgb(0, 120, 200), rgb(0, 160, 255)) !important;
+  border: none !important;
+  box-shadow: 0 4px 10px rgba(0, 120, 200, 0.3) !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background: linear-gradient(135deg, rgb(0, 140, 220), rgb(0, 200, 255)) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 15px rgba(0, 160, 255, 0.4) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -551,7 +560,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  /* background-image: var(--section-background-color) !important; */
   color: white !important;
 }
 
@@ -562,18 +570,19 @@ button:focus {
   font-size: 1rem !important;
   margin: 15px !important;
   padding: 10px 20px !important;
-  opacity: 0.93 !important;
-  outline: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  opacity: 0.95 !important;
+  outline: 1.5px solid rgba(0, 200, 255, 0.4) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 24px !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  background: rgba(10, 20, 50, 0.5) !important;
+  backdrop-filter: blur(4px) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
   width: fit-content !important;
   cursor: pointer !important;
-  transition: outline-color 0.3s, outline-width 0.3s, transform 0.3s;
   color: white;
+  border: 1px solid rgba(0, 200, 255, 0.2) !important;
 }
 
 .tech-icons-text {
@@ -592,7 +601,8 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  outline: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  outline: 2px solid rgba(0, 240, 255, 0.8) !important;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.3) !important;
 }
 .tech-icon-images {
   height: 1.6rem;
@@ -602,13 +612,24 @@ button:focus {
 .quote-card-view {
   border: none !important;
   color: white !important;
-  background-color: transparent !important;
+  background: rgba(10, 20, 50, 0.3) !important;
+  backdrop-filter: blur(4px) !important;
+  border-radius: 16px !important;
+  padding: 20px !important;
 }
 
 .about-activity {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+}
+
+.about-activity li {
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background: rgba(0, 120, 200, 0.1);
+  border-left: 3px solid #00f0ff;
+  border-radius: 0 8px 8px 0;
 }
 
 @media (max-width: 767px) {
@@ -658,23 +679,27 @@ button:focus {
   font-weight: 700;
   padding-top: 30px;
   padding-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
 }
 
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #00f0ff;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: rgba(0, 120, 200, 0.2);
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 200, 255, 0.3);
 }
 
 .resume .resume-item ul {
@@ -699,8 +724,9 @@ button:focus {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #8a49a8;
+  background: #00f0ff;
+  border: 2px solid rgb(0, 120, 200);
+  box-shadow: 0 0 10px #00f0ff;
 }
 
 .like-item {
@@ -710,18 +736,20 @@ button:focus {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background: rgba(0, 120, 200, 0.3) !important;
+  border: 1px solid rgba(0, 200, 255, 0.4) !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
   transition: 0.3s ease !important;
+  color: white !important;
 }
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background: rgba(0, 160, 255, 0.4) !important;
+  border-color: #00f0ff !important;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.3) !important;
 }
 
 .animate-like {
@@ -745,16 +773,19 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background: rgba(0, 120, 200, 0.3) !important;
+  border: 1px solid rgba(0, 200, 255, 0.4) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
+  color: white !important;
 }
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background: rgba(0, 160, 255, 0.4) !important;
+  border-color: #00f0ff !important;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.3) !important;
 }
 .fork-btn-inner::after {
   display: none !important;

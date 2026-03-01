@@ -7,9 +7,11 @@ import {
   AiFillInstagram,
 }
 
+
 from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   let date = new Date();
@@ -36,7 +38,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter/>
+                <FaXTwitter/>
               </a>
             </li>
             <li className="social-icons">

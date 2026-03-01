@@ -1,8 +1,8 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MBrahim.github.io/Portfolio/",
+  "homepage": "https://MBrahim.github.io/portfolio",
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
     "@react-three/drei": "^7.27.5",
@@ -19,6 +19,7 @@
     "react-dom": "^19.2.0",
     "react-github-calendar": "^3.2.2",
     "react-icons": "^4.8.0",
+    "react-markdown": "^10.1.0",
     "react-parallax-tilt": "^1.7.42",
     "react-pdf": "^5.7.1",
     "react-router-dom": "^6.2.2",

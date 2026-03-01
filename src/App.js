@@ -7,7 +7,8 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import ICM20948 from "./components/Projects/ICM20948";
-import SHM from "./components/Projects/16-Channel-Smart-Home-Control-Module";
+import DRV8701 from "./components/Projects/DRV8701";
+import SupercapacitorsBackupController from "./components/Projects/SupercapacitorsBackupController";
 import {
   BrowserRouter as Router,
   Route,
@@ -30,6 +31,8 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  
+
   return (
     <Router>
       <Preloader load={load} />
@@ -42,7 +45,8 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Resume" element={<Resume />} />
           <Route path="/Project/ICM20948" element={<ICM20948 />} />
-          <Route path="/project/16-Channel-Smart-Home-Control-Module" element={<SHM />} />
+          <Route path="/project/DRV8701" element={<DRV8701 />} />
+          <Route path="/project/SupercapacitorsBackupController" element={<SupercapacitorsBackupController />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

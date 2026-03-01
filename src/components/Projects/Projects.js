@@ -9,10 +9,13 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import { Link } from 'react-router-dom'; // Add this import
-import ICM20948img from "../../Assets/Projects/ICM20498.jpg";
+import ICM20948img from "../../Assets/Projects/ICM20498.png";
+import DRV8701img from "../../Assets/Projects/DRV8701.png";
+import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupercapacitorsBackupController.png";
 import ICM20948 from "./ICM20948";
-import SHM from "./16-Channel-Smart-Home-Control-Module";
+import DRV8701 from "./DRV8701";
 import Pre from "../../Assets/pre.svg";
+import SupercapacitorsBackupController from "./SupercapacitorsBackupController";
 
 function Projects() {
   return (
@@ -38,25 +41,27 @@ function Projects() {
             </Link>
           </Col>  
           <Col md={4} className="project-card">
-            <Link to="/project/16-Channel-Smart-Home-Control-Module" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link to="/project/DRV8701" style={{ textDecoration: "none", color: "inherit" }}>
               <ProjectCard
-                imgPath={Pre}
+                imgPath={DRV8701img}
                 isBlog={false}
-                title="Under Development"
+                title="DRV8701"
                 width="100%"
-                description="Under Development"
+                description="A high-power brushed DC motor driver based on Texas Instruments DRV8701, implemented as a full H-Bridge using four external High Power N-channel MOSFETs, supporting high voltage operation and precise current control for industrial and automotive motor applications."
               />  
             </Link>
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
-                imgPath={Pre}
+            <Link to="/project/SupercapacitorsBackupController" style={{ textDecoration: "none", color: "inherit" }}>
+              <ProjectCard
+                imgPath={SupercapacitorsBackupControllerimg}
                 isBlog={false}
-                title="Under Development"
+                title="Supercapacitors Backup Controller"
                 width="100%"
-                description="Under Development"
-            />
+                description="A high-reliability energy backup controller designed to manage supercapacitor-based power systems, ensuring uninterrupted supply during main power loss while providing controlled charging, voltage balancing, and system protection for embedded and industrial applications."
+              />
+            </Link>
           </Col>
 
           <Col md={4} className="project-card">

@@ -44,7 +44,7 @@ function Home2() {
                 <div className="underline" style={{ 
                   width: '80px', 
                   height: '4px', 
-                  background: 'rgba(138, 76, 168, 1)', 
+                  background: '#00f0ff', 
                   margin: '0.5rem auto' 
                 }}></div>
               </div>

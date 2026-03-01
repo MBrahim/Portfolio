@@ -25,15 +25,6 @@ const Review = () => {
       return checkNumber(newIndex);
     });
   };
-
-  const randomPerson = () => {
-    let randomNumber = Math.floor(Math.random() * people.length);
-    if (randomNumber === index) {
-      randomNumber = index + 1;
-    }
-    setIndex(checkNumber(randomNumber));
-  };
-  console.log();
    return (
     <article className='review center'>
       <h4 className='author' style={{ color: 'white', fontSize: '1.5em', marginBottom: '1rem' }}>{name}</h4>
@@ -42,7 +33,7 @@ const Review = () => {
       <button className='prev-btn' onClick={prevPerson} style={{
         background: 'transparent',
         border: 'none',
-        color: 'rgb(170, 54, 124)',
+        color: '#00f0ff',
         fontSize: '1.5em',
         cursor: 'pointer',
         padding: '0.5rem',
@@ -53,7 +44,7 @@ const Review = () => {
       <button className='next-btn' onClick={nextPerson} style={{
         background: 'transparent',
         border: 'none',
-        color: 'rgb(170, 54, 124)',
+        color: '#00f0ff',
         fontSize: '1.5em',
         cursor: 'pointer',
         padding: '0.5rem',

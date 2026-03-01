@@ -41,7 +41,7 @@ function NavBar() {
         <Navbar.Brand href="/" className="d-flex">
           <b className="purple" style={{ fontSize: "1.5em" }}>
                   {" "}
-                  MoMo{" "}
+                  MBrahim.{" "}
                 </b>
         </Navbar.Brand>
         <Navbar.Toggle

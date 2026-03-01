@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
+import { SiLatex, SiNextdotjs, SiSolidity } from "react-icons/si";
 import { FaRust } from "react-icons/fa";
 import Go from "../../Assets/TechIcons/go.svg";
 import C from "../../Assets/TechIcons/C++.svg";
@@ -31,7 +31,8 @@ import PyQT from "../../Assets/TechIcons/PyQT.png";
 import MATLAB from "../../Assets/TechIcons/Matlab.png";
 import ST from "../../Assets/TechIcons/ST.svg";
 import AVR from "../../Assets/TechIcons/AVR.png";
-
+import Arduino from "../../Assets/TechIcons/arduino.png";
+import Latex from "../../Assets/TechIcons/Latex.png";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -74,6 +75,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={Python} alt="Python" />
         <div className="tech-icons-text">Python</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Arduino} alt="Arduino" height="23px"/>
+        <div className="tech-icons-text">Arduino</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Latex} alt="LaTeX" height="23px"/>
+        <div className="tech-icons-text">LaTeX</div>
       </Col>
     </Row>
   );

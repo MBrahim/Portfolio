@@ -14,6 +14,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import { float } from "three/tsl";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Home() {
   return (
@@ -80,7 +81,7 @@ function Home() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaXTwitter />
                 </a>
               </li>
               <li className="social-icons">
