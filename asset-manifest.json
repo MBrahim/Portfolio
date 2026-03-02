@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.800a95cd.css",
-    "main.js": "/Portfolio/static/js/main.02f35872.js",
+    "main.js": "/Portfolio/static/js/main.904ae6a8.js",
     "static/js/453.3f1fb51b.chunk.js": "/Portfolio/static/js/453.3f1fb51b.chunk.js",
     "static/media/ICM20498.png": "/Portfolio/static/media/ICM20498.ab70ce7bae628990d8e3.png",
     "static/media/home-main.png": "/Portfolio/static/media/home-main.a2bd4f10aac9de429f08.png",
@@ -20,7 +20,7 @@
     "static/media/chatify.png": "/Portfolio/static/media/chatify.7206044e0b5cdad44726.png",
     "static/media/Latex.png": "/Portfolio/static/media/Latex.9c6062c3d15bfddefbdb.png",
     "static/media/ROS2.png": "/Portfolio/static/media/ROS2.53b374e69ccb406fbe48.png",
-    "static/media/avatar.svg": "/Portfolio/static/media/avatar.70b3885f8dc15281a3fa5df017172818.svg",
+    "static/media/avatar.svg": "/Portfolio/static/media/avatar.976939bb34c6f5f26d28cc74f2b7b1c6.svg",
     "static/media/KiCadLogo.png": "/Portfolio/static/media/KiCadLogo.6fe48331073cc5540656.png",
     "static/media/go.svg": "/Portfolio/static/media/go.92167445712559696ed2cbe525706710.svg",
     "static/media/SQL.svg": "/Portfolio/static/media/SQL.52fc098126b8b29ddd950a944b5d0026.svg",
@@ -54,11 +54,11 @@
     "static/media/Haskell.svg": "/Portfolio/static/media/Haskell.e4b7b5b34e24fee7cd7a2a1f75b9550b.svg",
     "static/media/Firebase.svg": "/Portfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
     "main.800a95cd.css.map": "/Portfolio/static/css/main.800a95cd.css.map",
-    "main.02f35872.js.map": "/Portfolio/static/js/main.02f35872.js.map",
+    "main.904ae6a8.js.map": "/Portfolio/static/js/main.904ae6a8.js.map",
     "453.3f1fb51b.chunk.js.map": "/Portfolio/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.800a95cd.css",
-    "static/js/main.02f35872.js"
+    "static/js/main.904ae6a8.js"
   ]
 }
