@@ -2,18 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import { Link } from 'react-router-dom'; // Add this import
-import ICM20948img from "../../Assets/Projects/ICM20498.png";
-import DRV8701img from "../../Assets/Projects/DRV8701.png";
-import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupercapacitorsBackupController.png";
-import ICM20948 from "./ICM20948";
-import DRV8701 from "./DRV8701";
+import ICM20948img from "../../Assets/Projects/ICM-20948/Photo.png";
+import DRV8701img from "../../Assets/Projects/DRV8701/Photo.png";
+import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupCap/Sup.png";
 import Pre from "../../Assets/pre.svg";
 import SupercapacitorsBackupController from "./SupercapacitorsBackupController";
 
@@ -29,28 +21,6 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <Link to="/project/ICM20948" style={{ textDecoration: "none", color: "inherit" }}>
-              <ProjectCard
-                imgPath={ICM20948img}
-                isBlog={false}
-                title="ICM20948"
-                width="100%"
-                description="A breakout board for the ICM-20948 9-axis motion sensor (gyro, acc., mag.) featuring I²C interfacing, selectable addresses via solder jumper, and wide 1.8V-5V power compatibility for easy integration with various microcontrollers and SBCs."
-              />  
-            </Link>
-          </Col>  
-          <Col md={4} className="project-card">
-            <Link to="/project/DRV8701" style={{ textDecoration: "none", color: "inherit" }}>
-              <ProjectCard
-                imgPath={DRV8701img}
-                isBlog={false}
-                title="DRV8701"
-                width="100%"
-                description="A high-power brushed DC motor driver based on Texas Instruments DRV8701, implemented as a full H-Bridge using four external High Power N-channel MOSFETs, supporting high voltage operation and precise current control for industrial and automotive motor applications."
-              />  
-            </Link>
-          </Col>
 
           <Col md={4} className="project-card">
             <Link to="/project/SupercapacitorsBackupController" style={{ textDecoration: "none", color: "inherit" }}>
@@ -64,6 +34,30 @@ function Projects() {
             </Link>
           </Col>
 
+          <Col md={4} className="project-card">
+            <Link to="/project/ICM20948" style={{ textDecoration: "none", color: "inherit" }}>
+              <ProjectCard
+                imgPath={ICM20948img}
+                isBlog={false}
+                title="ICM20948"
+                width="100%"
+                description="A breakout board for the ICM-20948 9-axis motion sensor (gyro, acc., mag.) featuring I²C interfacing, selectable addresses via solder jumper, and wide 1.8V-5V power compatibility for easy integration with various microcontrollers and SBCs."
+              />  
+            </Link>
+          </Col>  
+
+          <Col md={4} className="project-card">
+            <Link to="/project/DRV8701" style={{ textDecoration: "none", color: "inherit" }}>
+              <ProjectCard
+                imgPath={DRV8701img}
+                isBlog={false}
+                title="DRV8701"
+                width="100%"
+                description="A high-power brushed DC motor driver based on Texas Instruments DRV8701, implemented as a full H-Bridge using four external High Power N-channel MOSFETs, supporting high voltage operation and precise current control for industrial and automotive motor applications."
+              />  
+            </Link>
+          </Col>
+       
           <Col md={4} className="project-card">
             <ProjectCard
                 imgPath={Pre}

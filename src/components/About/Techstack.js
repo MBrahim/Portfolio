@@ -33,9 +33,28 @@ import ST from "../../Assets/TechIcons/ST.svg";
 import AVR from "../../Assets/TechIcons/AVR.png";
 import Arduino from "../../Assets/TechIcons/arduino.png";
 import Latex from "../../Assets/TechIcons/Latex.png";
+import { GiSolderingIron } from "react-icons/gi";
+import { SiEspressif,SiC, SiCplusplusbuilder  } from "react-icons/si";
+
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Python} alt="Python" />
+        <div className="tech-icons-text">Python Language</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiC  color="#Black" alt="C" className="tech-icon-images"/>
+        <div className="tech-icons-text">C Programming</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCplusplusbuilder  color="#Black" alt="C++" className="tech-icon-images"/>
+        <div className="tech-icons-text">C++ Programming</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={ASM} alt="Assembly" height="23px"/>
+        <div className="tech-icons-text">Assembly</div>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={ST} alt="STM32" height="23px"/>
         <div className="tech-icons-text">ARM</div>
@@ -44,17 +63,17 @@ function Techstack() {
         <img src={AVR} alt="AVR" height="23px"/>
         <div className="tech-icons-text">AVR</div>
       </Col>
+            <Col xs={4} md={2} className="tech-icons">
+        <SiEspressif   color="#E7352C" alt="ESP" className="tech-icon-images"/>
+        <div className="tech-icons-text">Espressif</div>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C++" height="23px"/>
-        <div className="tech-icons-text">C++</div>
+        <img src={Arduino} alt="Arduino" height="23px"/>
+        <div className="tech-icons-text">Arduino</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={ROS2} alt="ROS2" height="23px"/>
         <div className="tech-icons-text">ROS 2</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ASM} alt="Assembly" height="23px"/>
-        <div className="tech-icons-text">Assembly</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={OPENCV} alt="OpenCV"  height="23px"/>
@@ -73,16 +92,12 @@ function Techstack() {
         <div className="tech-icons-text">Git</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
-        <div className="tech-icons-text">Python</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Arduino} alt="Arduino" height="23px"/>
-        <div className="tech-icons-text">Arduino</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <img src={Latex} alt="LaTeX" height="23px"/>
         <div className="tech-icons-text">LaTeX</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <GiSolderingIron  color="yellow" alt="Soldering Iron" className="tech-icon-images"/>
+        <div className="tech-icons-text">Soldering (QFN-5 (1x1mm))</div>
       </Col>
     </Row>
   );

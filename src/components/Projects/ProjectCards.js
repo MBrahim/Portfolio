@@ -9,7 +9,7 @@ function ProjectCards({ imgPath, title, description, ghLink, isBlog, demoLink, w
     <Card className="project-card-view" style={{ width: width || "100%" }}>
       <Card.Img variant="top" src={imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className="project-title">{title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {description}
         </Card.Text>

@@ -288,6 +288,10 @@ button:focus {
   color: #00f0ff;
   text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
+.project-title {
+  color: #00f0ff !important;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;

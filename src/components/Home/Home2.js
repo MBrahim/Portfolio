@@ -14,10 +14,11 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m Hardware Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m a Hardware Engineer who loves transforming ideas into
+              reliable, scalable products. From fun projects to real-world applications.
+              <br />
+              <br />
+              I designed high power projects, high signal integrity circuits, and embedded systems, and I’m always eager to learn new technologies and tools.
               <br />
               <br />
               I’m a 

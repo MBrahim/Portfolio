@@ -12,8 +12,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiUpwork } from "react-icons/si";
-import { float } from "three/tsl";
+import { SiUpwork, SiWhatsapp } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Home() {
@@ -46,7 +45,7 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "600px",
+                style={{ maxHeight: "500px",
                 float: "left",
                 verticalAlign: "top"}}
               />
@@ -84,6 +83,18 @@ function Home() {
                   <FaXTwitter />
                 </a>
               </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://wa.me/201553902343"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiWhatsapp/>
+                </a>
+              </li>
+              
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/mabrahim/"

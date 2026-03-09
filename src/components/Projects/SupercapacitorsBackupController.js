@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { useEffect, useState } from "react";
 import Particle from "../Particle";
 import { fetchAndParseMarkdown } from "./markdownParser";
-
+import ModelViewer from "../ModelViewer";
+import { Container, Row, Col } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import { FaFilePdf } from "react-icons/fa6";
 
 function SupercapacitorsBackupController() {
     const [content, setContent] = useState([]);
@@ -22,9 +24,36 @@ function SupercapacitorsBackupController() {
         <Container fluid className="project-section">
             <Particle />
             <Container>
-                <div className="markdown-content">
+                <Row style={{position: 'relative', width: '100%', textAlign: 'center'}}>
+                    <h1 style={{ margin: 0, padding: 0 }}>
+                        <strong className="main-name">Supercapacitors Backup Controller</strong>
+                    </h1>
+                    <h3 style={{ margin: 0, padding: 0 }}>
+                        <strong style={{ color: 'white', textDecoration: 'underline' }}>3D Model</strong>
+                    </h3>
+                </Row>
+
+                <Row>
+                <ModelViewer modelUrl={require("../../Assets/Projects/SupCap/PCB.glb")} />
+                </Row>
+
+                <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px"}}>
+                        <Button
+                            variant="primary"
+                            href={"https://youtu.be/dQw4w9WgXcQ?si=6dOHQhV5drgI3rzn"}
+                            target="_blank"
+                            style={{ maxWidth: "250px" }}
+                        >
+                            <FaFilePdf/>
+                            &nbsp;The Schematic
+                        </Button>
+
+                </Row>
+
+                <Row className="markdown-content">
                     {content}
-                </div>
+                </Row>
+
             </Container>
         </Container>
     );

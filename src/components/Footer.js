@@ -10,7 +10,7 @@ import {
 
 from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiUpwork } from "react-icons/si";
+import { SiUpwork, SiWhatsapp } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
@@ -39,6 +39,16 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <FaXTwitter/>
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://wa.me/201553902343"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiWhatsapp/>
               </a>
             </li>
             <li className="social-icons">

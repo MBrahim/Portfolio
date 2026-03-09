@@ -37,7 +37,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "I see it as the art - designing and programming systems that bring visions to reality"{" "}
+            "I see it as the art - designing and programming systems bringing visions to reality"{" "}
           </p>
         </blockquote>
       </Card.Body>
