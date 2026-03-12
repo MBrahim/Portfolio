@@ -8,7 +8,7 @@ import DRV8701img from "../../Assets/Projects/DRV8701/Photo.png";
 import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupCap/Sup.png";
 import Pre from "../../Assets/pre.svg";
 import DRV8243 from "../../Assets/Projects/DRV8243/DRV8243.png"
-import Octopuse from "../../Assets/Projects/Octopuse/Octopuse.png"
+import Octopus from "../../Assets/Projects/Octopus/Octopus.png"
 
 function Projects() {
   return (
@@ -43,6 +43,18 @@ function Projects() {
                 title="Supercapacitors Backup Controller"
                 width="100%"
                 description="A high-reliability energy backup controller designed to manage supercapacitor-based power systems, ensuring uninterrupted supply during main power loss while providing controlled charging, voltage balancing, and system protection for embedded and industrial applications."
+              />
+            </Link>
+          </Col>
+
+          <Col md={4} className="project-card">
+            <Link to="/project/Octopus" style={{ textDecoration: "none", color: "inherit" }}>
+              <ProjectCard
+                imgPath={Octopus}
+                isBlog={false}
+                title="Project Octopus"
+                width="100%"
+                description="A multi-functional embedded control system integrating centralized processing, distributed communication, power regulation, and multi-channel actuator control to support complex robotics and automation applications."
               />
             </Link>
           </Col>
@@ -83,17 +95,7 @@ function Projects() {
             </Link>
           </Col>
 
-          <Col md={4} className="project-card">
-            <Link to="/project/Octopus" style={{ textDecoration: "none", color: "inherit" }}>
-              <ProjectCard
-                imgPath={Octopuse}
-                isBlog={false}
-                title="Project Octopus"
-                width="100%"
-                description="A multi-functional embedded control system integrating centralized processing, distributed communication, power regulation, and multi-channel actuator control to support complex robotics and automation applications."
-              />
-            </Link>
-          </Col>
+          
 
         </Row>
       </Container>

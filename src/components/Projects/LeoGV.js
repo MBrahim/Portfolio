@@ -50,7 +50,7 @@ function LeoGV() {
                             <ProjectCard
                                 imgPath={Senna}
                                 isBlog={false}
-                                title="Project Senna Control Board"
+                                title="Project Senna - Control Board"
                                 width="100%"
                                 description="Central vehicle control and communication board integrating processing, power management, motor control, and CAN Bus interfaces for autonomous vehicle subsystems."
                             />
@@ -61,7 +61,7 @@ function LeoGV() {
                             <ProjectCard
                                 imgPath={Cannon}
                                 isBlog={false}
-                                title="DRV8818 Stepper Motor Driver"
+                                title="Project Cannon - Stepper Motor Driver (DRV8818)"
                                 width="100%"
                                 description="Compact dual H-Bridge stepper motor driver based on TI DRV8818 with integrated current regulation, microstepping capability, and built-in protection features."
                             />
