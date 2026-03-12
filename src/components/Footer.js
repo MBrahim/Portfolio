@@ -1,21 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiOutlineX } from 'react-icons/ai/';
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-}
-
-
-from "react-icons/ai";
+import {  AiFillGithub} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiUpwork, SiWhatsapp } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  //et date = new Date();
+  //let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row style={{justifyContent: "center"}}> 

@@ -4,12 +4,9 @@ import homeLogo from "../../Assets/Home.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import Techstack from "../About/Techstack";
-import Github from "../About/Github";
+import ContactForm from "./ContactForm";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiUpwork, SiWhatsapp } from "react-icons/si";
@@ -54,7 +51,7 @@ function Home() {
         </Container>
       </Container>
     <Home2/>
-
+      <ContactForm />              
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">

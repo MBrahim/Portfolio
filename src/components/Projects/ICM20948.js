@@ -1,14 +1,11 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import ModelViewer from "../ModelViewer";
 import pdf from "../../Assets/Projects/ICM-20948/Schematic.pdf";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import Button from "react-bootstrap/Button";
 import { FaFilePdf } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+
 function ICM20948() {
 
     return (

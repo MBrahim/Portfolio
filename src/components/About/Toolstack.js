@@ -1,12 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
-import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
 import Altium from "../../Assets/TechIcons/Altium.svg";
 import KiCadLogo from "../../Assets/TechIcons/KiCadLogo.png";
 import Pspice from "../../Assets/TechIcons/Pspice.png";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
 import { SiMultisim } from "react-icons/si";
 import { TbWaveSine } from "react-icons/tb";
 import { FcLinux } from "react-icons/fc";

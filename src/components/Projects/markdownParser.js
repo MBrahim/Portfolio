@@ -1,5 +1,4 @@
 // utils/markdownParser.js
-import React from 'react';
 
 /**
  * Custom markdown parser with styling options

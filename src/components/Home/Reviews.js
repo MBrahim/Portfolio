@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import people from './reviews_data';
-import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const Review = () => {
   const [index, setIndex] = useState(0);
-  const { name, job, text } = people[index];
+  const { name, text } = people[index];
 
   const checkNumber = (number) => {
     if (number > people.length - 1) return 0;

@@ -1,29 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiLatex, SiNextdotjs, SiSolidity } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
-import Go from "../../Assets/TechIcons/go.svg";
-import C from "../../Assets/TechIcons/C++.svg";
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
-import HaskellIcon from "../../Assets/TechIcons/Haskell.svg";
-import Java from "../../Assets/TechIcons/Java.svg";
 import Python from "../../Assets/TechIcons/Python.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
 import Git from "../../Assets/TechIcons/Git.svg";
-import Firebase from "../../Assets/TechIcons/Firebase.svg";
-import Redis from "../../Assets/TechIcons/Redis.svg";
-import Docker from "../../Assets/TechIcons/Docker.svg";
-import Mongo from "../../Assets/TechIcons/Mongo.svg";
-import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
-import Redux from "../../Assets/TechIcons/Redux.svg";
-import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
-import MUI from "../../Assets/TechIcons/MUI.svg";
-import Postman from "../../Assets/TechIcons/Postman.svg";
-import AWS from "../../Assets/TechIcons/AWS.svg";
-import Kafka from "../../Assets/TechIcons/Kafka.svg";
 import ROS2 from "../../Assets/TechIcons/ROS2.png";
 import ASM from "../../Assets/TechIcons/ASM.png";
 import OPENCV from "../../Assets/TechIcons/opencv.svg";
@@ -34,7 +12,7 @@ import AVR from "../../Assets/TechIcons/AVR.png";
 import Arduino from "../../Assets/TechIcons/arduino.png";
 import Latex from "../../Assets/TechIcons/Latex.png";
 import { GiSolderingIron } from "react-icons/gi";
-import { SiEspressif,SiC, SiCplusplusbuilder  } from "react-icons/si";
+import { SiEspressif, SiC, SiCplusplusbuilder } from "react-icons/si";
 
 function Techstack() {
   return (

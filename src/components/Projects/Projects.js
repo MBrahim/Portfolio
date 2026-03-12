@@ -7,7 +7,6 @@ import ICM20948img from "../../Assets/Projects/ICM-20948/Photo.png";
 import DRV8701img from "../../Assets/Projects/DRV8701/Photo.png";
 import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupCap/Sup.png";
 import Pre from "../../Assets/pre.svg";
-import SupercapacitorsBackupController from "./SupercapacitorsBackupController";
 
 function Projects() {
   return (

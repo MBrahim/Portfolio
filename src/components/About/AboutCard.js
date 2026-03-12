@@ -1,8 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-import { SiEgnyte } from "react-icons/si";
-import alexandria_university from "../../Assets/alexandria-university.png";
+
 function AboutCard() {
   return (
     <Card className="quote-card-view">
