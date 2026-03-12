@@ -479,12 +479,35 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
   border: 1px solid rgba(0, 200, 255, 0.2) !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 15px 5px rgba(0, 160, 255, 0.4) !important;
   border: 1px solid rgba(0, 200, 255, 0.4) !important;
+}
+
+.card-img-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 20px !important;
+}
+
+.card-img-wrapper .card-img-top {
+  max-height: 200px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+.project-card-view .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  flex: 1 !important;
 }
 
 .blog-card {
@@ -521,7 +544,6 @@ button:focus {
 }
 
 .card-img-top {
-  padding: 20px !important;
   opacity: 0.9 !important;
   border-radius: 10px !important;
 }
@@ -972,4 +994,22 @@ button:focus {
     width: 100% !important;
     padding: 12px 30px !important;
   }
+}
+
+/* --------- */
+/* Graduation Project Card */
+/* --------- */
+.project-card.graduation-card {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.project-card.graduation-card .project-card-view {
+  background: linear-gradient(135deg, rgba(0, 120, 200, 0.15), rgba(0, 240, 255, 0.1)) !important;
+  border: 1px solid rgba(0, 240, 255, 0.3) !important;
+}
+
+.project-card.graduation-card .project-card-view:hover {
+  border-color: rgba(0, 240, 255, 0.5) !important;
+  box-shadow: 0 8px 30px rgba(0, 200, 255, 0.3) !important;
 }

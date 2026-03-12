@@ -51,7 +51,6 @@ function Home() {
         </Container>
       </Container>
     <Home2/>
-      <ContactForm />              
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">

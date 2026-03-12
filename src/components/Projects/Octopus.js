@@ -1,15 +1,14 @@
-import { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { useEffect, useState } from "react";
 import Particle from "../Particle";
 import { fetchAndParseMarkdown } from "./markdownParser";
-import ModelViewer from "../ModelViewer";
+import { Container } from "react-bootstrap";
 
-function DRV8701() {
+function Octopus() {
     const [content, setContent] = useState([]);
 
     useEffect(() => {
         fetchAndParseMarkdown(
-            'https://raw.githubusercontent.com/MBrahim/Portfolio/main/src/Assets/Projects/DRV8701/Readme.md',
+            'https://raw.githubusercontent.com/MBrahim/Portfolio/main/src/Assets/Projects/Octopus/Readme.md',
             {
                 header: { color: '#00FFFF', textAlign: 'left' },
                 paragraph: { color: 'white', textAlign: 'left' },
@@ -24,19 +23,15 @@ function DRV8701() {
             <Container>
                 <div style={{position: 'relative', width: '100%', textAlign: 'center'}}>
                     <h1 style={{ margin: 0, padding: 0 }}>
-                        <strong className="main-name">DRV8701</strong>
+                        <strong className="main-name">Project Octopus</strong>
                     </h1>
-                    <h3 style={{ margin: 0, padding: 0 }}>
-                        <strong style={{ color: 'white', textDecoration: 'underline' }}>3D Model</strong>
-                    </h3>
                 </div>
                 <div className="markdown-content">
-                {content}
+                    {content}
                 </div>
             </Container>
         </Container>
     );
 }
 
-export default DRV8701;
-
+export default Octopus;

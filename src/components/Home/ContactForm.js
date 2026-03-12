@@ -68,7 +68,7 @@ function ContactForm() {
 
     try {
       await Promise.all([
-        emailjs.send(SERVICE_ID, TEMPLATE_TO_OWNER, templateParamsToOwner, PUBLIC_KEY)
+        //emailjs.send(SERVICE_ID, TEMPLATE_TO_OWNER, templateParamsToOwner, PUBLIC_KEY)
       ]);
       
       setStatus({ 

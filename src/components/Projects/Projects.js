@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import { Link } from 'react-router-dom'; // Add this import
+import { Link } from 'react-router-dom';
 import ICM20948img from "../../Assets/Projects/ICM-20948/Photo.png";
 import DRV8701img from "../../Assets/Projects/DRV8701/Photo.png";
 import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupCap/Sup.png";
@@ -20,6 +20,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
+          <Col xs={12} className="project-card" style={{ width: "100%", maxWidth: "100%" }}>
+            <Link to="/project/LeoGV" style={{ textDecoration: "none", color: "inherit", display: "block" }}>
+              <ProjectCard
+                imgPath={Pre}
+                isBlog={false}
+                title="LeoGV – WareHouse Robot (Graduation Project)"
+                width="100%"
+                description="LeoGV is an autonomous mobile warehouse robot with differential drive powered by two BLDC hub motors controlled via custom ESC (based on Odrive). It uses STM32G4 microcontroller with embedded C drivers, Raspberry Pi 4 as the main brain running ROS2 for abstraction, and features wireless WiFi control via PyQt5 GUI. The robot includes a lifting mechanism with four stepper motors, USB Lidar and camera for environment awareness, all built with custom-designed PCBs including USB Hub and USB-to-CAN controller."
+              />
+            </Link>
+          </Col>
 
           <Col md={4} className="project-card">
             <Link to="/project/SupercapacitorsBackupController" style={{ textDecoration: "none", color: "inherit" }}>
@@ -38,7 +50,7 @@ function Projects() {
               <ProjectCard
                 imgPath={ICM20948img}
                 isBlog={false}
-                title="ICM20948"
+                title="ICM-20948 Breakout Board"
                 width="100%"
                 description="A breakout board for the ICM-20948 9-axis motion sensor (gyro, acc., mag.) featuring I²C interfacing, selectable addresses via solder jumper, and wide 1.8V-5V power compatibility for easy integration with various microcontrollers and SBCs."
               />  
@@ -50,7 +62,7 @@ function Projects() {
               <ProjectCard
                 imgPath={DRV8701img}
                 isBlog={false}
-                title="DRV8701"
+                title="DRV8701 Motor Driver"
                 width="100%"
                 description="A high-power brushed DC motor driver based on Texas Instruments DRV8701, implemented as a full H-Bridge using four external High Power N-channel MOSFETs, supporting high voltage operation and precise current control for industrial and automotive motor applications."
               />  
@@ -58,46 +70,29 @@ function Projects() {
           </Col>
        
           <Col md={4} className="project-card">
-            <ProjectCard
+            <Link to="/project/DRV8243" style={{ textDecoration: "none", color: "inherit" }}>
+              <ProjectCard
                 imgPath={Pre}
                 isBlog={false}
-                title="Under Development"
+                title="DRV8243 Motor Driver"
                 width="100%"
-                description="Under Development"
-            />
+                description="Automotive-grade 40V, 12A H-Bridge motor driver based on Texas Instruments DRV8243HQRXYRQ1, with integrated current sensing, protection features, and configurable control modes for robust motor control applications."
+              />
+            </Link>
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            <Link to="/project/Octopus" style={{ textDecoration: "none", color: "inherit" }}>
+              <ProjectCard
                 imgPath={Pre}
                 isBlog={false}
-                title="Under Development"
+                title="Project Octopus"
                 width="100%"
-                description="Under Development"
-            />
+                description="A multi-functional embedded control system integrating centralized processing, distributed communication, power regulation, and multi-channel actuator control to support complex robotics and automation applications."
+              />
+            </Link>
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-                imgPath={Pre}
-                isBlog={false}
-                title="Under Development"
-                width="100%"
-                description="Under Development"
-                //ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-                //demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-                imgPath={Pre}
-                isBlog={false}
-                title="Under Development"
-                width="100%"
-                description="Under Development"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
