@@ -11,7 +11,7 @@ function SupercapacitorsBackupController() {
 
     useEffect(() => {
         fetchAndParseMarkdown(
-            'https://raw.githubusercontent.com/MBrahim/Supercapacitors-Backup-Controller/main/README.md',
+            'https://raw.githubusercontent.com/MBrahim/Portfolio/main/src/Assets/Projects/SupCap/Readme.md',
             {
                 header: { color: '#00FFFF', textAlign: 'left' },
                 paragraph: { color: 'white', textAlign: 'left' },
