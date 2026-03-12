@@ -7,6 +7,8 @@ import ICM20948img from "../../Assets/Projects/ICM-20948/Photo.png";
 import DRV8701img from "../../Assets/Projects/DRV8701/Photo.png";
 import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupCap/Sup.png";
 import Pre from "../../Assets/pre.svg";
+import DRV8243 from "../../Assets/Projects/DRV8243/DRV8243.png"
+import Octopuse from "../../Assets/Projects/Octopuse/Octopuse.png"
 
 function Projects() {
   return (
@@ -72,7 +74,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <Link to="/project/DRV8243" style={{ textDecoration: "none", color: "inherit" }}>
               <ProjectCard
-                imgPath={Pre}
+                imgPath={DRV8243}
                 isBlog={false}
                 title="DRV8243 Motor Driver"
                 width="100%"
@@ -84,7 +86,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <Link to="/project/Octopus" style={{ textDecoration: "none", color: "inherit" }}>
               <ProjectCard
-                imgPath={Pre}
+                imgPath={Octopuse}
                 isBlog={false}
                 title="Project Octopus"
                 width="100%"
