@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f892f016.css",
-    "main.js": "/Portfolio/static/js/main.b083a981.js",
+    "main.css": "/Portfolio/static/css/main.ee1f2890.css",
+    "main.js": "/Portfolio/static/js/main.ed95fa48.js",
     "static/js/453.3f1fb51b.chunk.js": "/Portfolio/static/js/453.3f1fb51b.chunk.js",
     "static/media/PCB.glb": "/Portfolio/static/media/PCB.4d07a5e9492bd08999c5.glb",
     "static/media/Photo.png": "/Portfolio/static/media/Photo.df8888d7b4cc2df62d22.png",
@@ -14,7 +14,7 @@
     "static/media/Sup.png": "/Portfolio/static/media/Sup.de42910882f2ae8cc56a.png",
     "static/media/DRV8243.png": "/Portfolio/static/media/DRV8243.059470a2728385fd5b71.png",
     "static/media/arduino.png": "/Portfolio/static/media/arduino.51319eb1c9d57bd3dd28.png",
-    "static/media/MoMo.pdf": "/Portfolio/static/media/MoMo.b729e1484bc4b2e516ba.pdf",
+    "static/media/MoMo.pdf": "/Portfolio/static/media/MoMo.78ac07596e3bd5da5095.pdf",
     "static/media/Cannon.png": "/Portfolio/static/media/Cannon.87f88fa26645611c0c61.png",
     "static/media/Schematic.pdf": "/Portfolio/static/media/Schematic.206576c508a161e2b9bf.pdf",
     "static/media/Latex.png": "/Portfolio/static/media/Latex.9c6062c3d15bfddefbdb.png",
@@ -29,12 +29,12 @@
     "static/media/ST.svg": "/Portfolio/static/media/ST.898646e0191da2105066eedbd5c2d5e5.svg",
     "static/media/opencv.svg": "/Portfolio/static/media/opencv.1de1335640fd2fd6e76ef902e485c27d.svg",
     "static/media/Git.svg": "/Portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
-    "main.f892f016.css.map": "/Portfolio/static/css/main.f892f016.css.map",
-    "main.b083a981.js.map": "/Portfolio/static/js/main.b083a981.js.map",
+    "main.ee1f2890.css.map": "/Portfolio/static/css/main.ee1f2890.css.map",
+    "main.ed95fa48.js.map": "/Portfolio/static/js/main.ed95fa48.js.map",
     "453.3f1fb51b.chunk.js.map": "/Portfolio/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f892f016.css",
-    "static/js/main.b083a981.js"
+    "static/css/main.ee1f2890.css",
+    "static/js/main.ed95fa48.js"
   ]
 }
