@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 import {
   AiFillGithub,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaAt } from "react-icons/fa";
 import { SiUpwork, SiWhatsapp } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -92,6 +92,17 @@ function Home() {
               </li>
               
               <li className="social-icons">
+                  <a
+                    href="mailto:MohamedMo250ah@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                  <FaAt/>
+                  </a>
+              </li>
+
+              <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/mabrahim/"
                   target="_blank"
@@ -115,8 +126,10 @@ function Home() {
           </Col>
         </Row>
         <Row>
-        <ContactForm/>
->        </Row>
+          <Col md={12}>
+            <ContactForm />
+          </Col>
+        </Row>
       </Container>
     </section>
   );

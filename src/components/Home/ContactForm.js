@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 
-// Telegram Bot Configuration
-const TELEGRAM_BOT_TOKEN = '8600714315:AAGhn1cf_vKZpmWOj9v_nPNcEyZR9pgKB8o'; // Replace with your bot token from @BotFather
-const TELEGRAM_CHAT_ID = '657297997'; // Replace with your chat ID from @userinfobot
+// Telegram Bot Configuration (Create React App env vars must be prefixed with REACT_APP_)
+const TELEGRAM_BOT_TOKEN = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.REACT_APP_TELEGRAM_CHAT_ID;
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -49,6 +49,11 @@ function ContactForm() {
   };
 
   const sendTelegramNotification = async (data) => {
+    if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+      console.warn('Telegram bot token or chat ID is missing. Skipping Telegram notification.');
+      return false;
+    }
+
     const message = `
 🔔 *NEW CONTACT FORM SUBMISSION*
     
@@ -117,7 +122,7 @@ function ContactForm() {
     } catch (error) {
       setStatus({ 
         type: 'error', 
-        message: 'Oops! Something went wrong. Please try again or contact me directly.' 
+        message: 'Oops! Something went wrong. Please try again or contact me directly through MohamedMo250ah@gmail.com' 
       });
     } finally {
       setIsSubmitting(false);
