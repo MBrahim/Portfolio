@@ -497,10 +497,20 @@ button:focus {
   padding: 20px !important;
 }
 
+.card-img-wrapper.multiple {
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+
 .card-img-wrapper .card-img-top {
   max-height: 200px !important;
   width: auto !important;
   object-fit: contain !important;
+}
+
+.card-img-wrapper.multiple .card-img-top {
+  max-width: 45% !important;
+  max-height: 300px !important;
 }
 
 .project-card-view .card-body {

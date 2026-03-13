@@ -46,7 +46,7 @@ function LeoGV() {
 
                 <Row style={{ justifyContent: "center", paddingBottom: "30px" }}>
                     <Col md={6} className="project-card">
-                        <Link to="/project/LeoGV-Senna" style={{ textDecoration: "none", color: "inherit" }}>
+                        <Link to="/project/LeoGV/Senna" style={{ textDecoration: "none", color: "inherit" }}>
                             <ProjectCard
                                 imgPath={Senna}
                                 isBlog={false}
@@ -57,7 +57,7 @@ function LeoGV() {
                         </Link>
                     </Col>
                     <Col md={6} className="project-card">
-                        <Link to="/project/LeoGV-DRV8818" style={{ textDecoration: "none", color: "inherit" }}>
+                        <Link to="/project/LeoGV/Cannon" style={{ textDecoration: "none", color: "inherit" }}>
                             <ProjectCard
                                 imgPath={Cannon}
                                 isBlog={false}

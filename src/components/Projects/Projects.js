@@ -9,6 +9,9 @@ import SupercapacitorsBackupControllerimg from "../../Assets/Projects/SupCap/Sup
 import Pre from "../../Assets/pre.svg";
 import DRV8243 from "../../Assets/Projects/DRV8243/DRV8243.png"
 import Octopus from "../../Assets/Projects/Octopus/Octopus.png"
+import LeoFront from "../../Assets/Projects/LeoGV/Front.png"
+import LeoBack from "../../Assets/Projects/LeoGV/Back.png"
+
 
 function Projects() {
   return (
@@ -26,7 +29,7 @@ function Projects() {
           <Col xs={12} className="project-card" style={{ width: "100%", maxWidth: "100%" }}>
             <Link to="/project/LeoGV" style={{ textDecoration: "none", color: "inherit", display: "block" }}>
               <ProjectCard
-                imgPath={Pre}
+                imgPath={[LeoFront, LeoBack]}
                 isBlog={false}
                 title="LeoGV – WareHouse Robot (Graduation Project)"
                 width="100%"

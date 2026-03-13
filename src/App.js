@@ -13,7 +13,8 @@ import DRV8243 from "./components/Projects/DRV8243";
 import Octopus from "./components/Projects/Octopus";
 import LeoGV from "./components/Projects/LeoGV";
 import LeoGVSenna from "./components/Projects/LeoGVSenna";
-import LeoGVDRV8818 from "./components/Projects/LeoGVDRV8818";
+import LeoGVCannon from "./components/Projects/LeoGVCannon";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -53,8 +54,8 @@ function App() {
           <Route path="/project/DRV8243" element={<DRV8243 />} />
           <Route path="/project/Octopus" element={<Octopus />} />
           <Route path="/project/LeoGV" element={<LeoGV />} />
-          <Route path="/project/LeoGV-Senna" element={<LeoGVSenna />} />
-          <Route path="/project/LeoGV-DRV8818" element={<LeoGVDRV8818 />} />
+          <Route path="/project/LeoGV/Senna" element={<LeoGVSenna />} />
+          <Route path="/project/LeoGV/Cannon" element={<LeoGVCannon />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

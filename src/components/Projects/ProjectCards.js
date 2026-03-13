@@ -5,10 +5,25 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards({ imgPath, title, description, ghLink, isBlog, demoLink, width }) {
+  const renderImages = () => {
+    if (Array.isArray(imgPath)) {
+      return imgPath.map((src, index) => (
+        <Card.Img
+          key={index}
+          variant="top"
+          src={src}
+          alt={`card-img-${index}`}
+        />
+      ));
+    }
+
+    return <Card.Img variant="top" src={imgPath} alt="card-img" />;
+  };
+
   return (
     <Card className="project-card-view" style={{ width: width || "100%" }}>
-      <div className="card-img-wrapper">
-        <Card.Img variant="top" src={imgPath} alt="card-img" />
+      <div className={`card-img-wrapper${Array.isArray(imgPath) ? " multiple" : ""}`}>
+        {renderImages()}
       </div>
       <Card.Body>
         <Card.Title className="project-title">{title}</Card.Title>

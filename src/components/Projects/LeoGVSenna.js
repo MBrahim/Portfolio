@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Particle from "../Particle";
 import { fetchAndParseMarkdown } from "./markdownParser";
-import { Container } from "react-bootstrap";
-
+import { Container, Row } from "react-bootstrap";
+import ModelViewer from "../ModelViewer";
 function LeoGVSenna() {
     const [content, setContent] = useState([]);
 
@@ -21,14 +21,16 @@ function LeoGVSenna() {
         <Container fluid className="project-section">
             <Particle />
             <Container>
-                <div style={{position: 'relative', width: '100%', textAlign: 'center'}}>
+                <Row style={{position: 'relative', width: '100%', textAlign: 'center'}}>
                     <h1 style={{ margin: 0, padding: 0 }}>
-                        <strong className="main-name">LeoGV – Project Senna Control Board</strong>
+                        <strong className="main-name">LeoGV – Project Senna</strong>
                     </h1>
-                </div>
+                </Row>
+
                 <div className="markdown-content">
                     {content}
                 </div>
+                
             </Container>
         </Container>
     );
