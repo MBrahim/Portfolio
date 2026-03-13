@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MBrahim.github.io/Portfolio",
+  "homepage": "https://mbrahim.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-pdf/renderer": "^2.2.0",

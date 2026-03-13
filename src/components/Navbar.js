@@ -33,7 +33,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand as={Link} to="/" className="d-flex">
           <b className="purple" style={{ fontSize: "1.5em" }}>
                   {" "}
                   MBrahim.{" "}
