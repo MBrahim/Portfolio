@@ -114,6 +114,9 @@ function Home() {
             </ul>
           </Col>
         </Row>
+        <Row>
+        <ContactForm/>
+>        </Row>
       </Container>
     </section>
   );

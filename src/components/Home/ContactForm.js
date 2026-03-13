@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import emailjs from '@emailjs/browser';
+import axios from 'axios';
 
-//const SERVICE_ID = 'service_ix98vt9';
-const TEMPLATE_TO_OWNER = 'template_b3rql3n';
-const TEMPLATE_TO_CLIENT = 'template_6wzef8b';
-//const PUBLIC_KEY = '_nCAboflUTGjlQTvp';
+// Telegram Bot Configuration
+const TELEGRAM_BOT_TOKEN = '8600714315:AAGhn1cf_vKZpmWOj9v_nPNcEyZR9pgKB8o'; // Replace with your bot token from @BotFather
+const TELEGRAM_CHAT_ID = '657297997'; // Replace with your chat ID from @userinfobot
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -49,6 +48,37 @@ function ContactForm() {
     return true;
   };
 
+  const sendTelegramNotification = async (data) => {
+    const message = `
+🔔 *NEW CONTACT FORM SUBMISSION*
+    
+*Name:* ${data.name}
+*Email:* ${data.email}
+*Phone:* ${data.phone || 'Not provided'}
+*Inquiry:* ${data.inquiry}
+*Message:* ${data.message || 'No additional message'}
+*Time:* ${new Date().toLocaleString()}
+    `;
+
+    try {
+      const response = await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+        parse_mode: 'Markdown'
+      });
+      
+      if (response.data.ok) {
+        return true;
+      } else {
+        console.error('Telegram API error:', response.data);
+        return false;
+      }
+    } catch (error) {
+      console.error('Telegram notification failed:', error.response?.data || error.message);
+      return false;
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -57,33 +87,41 @@ function ContactForm() {
     setIsSubmitting(true);
     setStatus({ type: '', message: '' });
 
-    const templateParamsToOwner = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone || 'Not provided',
-      inquiry: formData.inquiry,
-      message: formData.message || 'No additional message'
-    };
-
-
     try {
-      await Promise.all([
-        //emailjs.send(SERVICE_ID, TEMPLATE_TO_OWNER, templateParamsToOwner, PUBLIC_KEY)
-      ]);
+      // Send notification to Telegram
+      const telegramSent = await sendTelegramNotification(formData);
       
-      setStatus({ 
-        type: 'success', 
-        message: 'Thank you! Your message has been sent successfully. I\'ll get back to you soon!' 
+      // Save to localStorage as backup
+      const submissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
+      submissions.push({
+        ...formData,
+        timestamp: new Date().toISOString(),
+        notificationSent: telegramSent
       });
+      localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
+      
+      if (telegramSent) {
+        setStatus({ 
+          type: 'success', 
+          message: 'Thank you! Your message has been sent successfully. I\'ll get back to you soon!' 
+        });
+      } else {
+        setStatus({ 
+          type: 'warning', 
+          message: 'Message saved locally. I\'ll check it when I\'m back online. Thank you!' 
+        });
+      }
+      
+      // Clear form
       setFormData({ name: '', email: '', phone: '', inquiry: '', message: '' });
     } catch (error) {
       setStatus({ 
         type: 'error', 
-        message: 'Oops! Something went wrong. Please try again or contact me directly via email.' 
+        message: 'Oops! Something went wrong. Please try again or contact me directly.' 
       });
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    setIsSubmitting(false);
   };
 
   return (
@@ -113,6 +151,7 @@ function ContactForm() {
                         placeholder="Your Name"
                         className="form-input"
                         disabled={isSubmitting}
+                        required
                       />
                     </div>
                   </Col>
@@ -128,6 +167,7 @@ function ContactForm() {
                         placeholder="your.email@example.com"
                         className="form-input"
                         disabled={isSubmitting}
+                        required
                       />
                     </div>
                   </Col>
@@ -160,6 +200,7 @@ function ContactForm() {
                         placeholder="Subject of your inquiry"
                         className="form-input"
                         disabled={isSubmitting}
+                        required
                       />
                     </div>
                   </Col>
@@ -184,6 +225,9 @@ function ContactForm() {
                 
                 {status.message && (
                   <div className={`form-status ${status.type}`}>
+                    {status.type === 'success' && '✅ '}
+                    {status.type === 'error' && '❌ '}
+                    {status.type === 'warning' && '⚠️ '}
                     {status.message}
                   </div>
                 )}
@@ -202,7 +246,7 @@ function ContactForm() {
                         </>
                       ) : (
                         <>
-                          <span className="btn-icon">✉️</span>
+                          <span className="btn-icon">📨</span>
                           Send Message
                         </>
                       )}
